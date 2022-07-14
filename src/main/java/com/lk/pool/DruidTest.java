@@ -37,7 +37,7 @@ public class DruidTest {
     public void testQueryRunner() throws Exception {
         QueryRunner runner = new QueryRunner();
         String sql = "update human set name = ? where id = ?";
-        int i = runner.update(getConnection(), sql, "ym", 40);
+        int i = runner.update(getConnection(), sql, "ym", 48);
         System.out.println(i);
 
         sql = "select id, name from human where id > ?";
